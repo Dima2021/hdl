@@ -224,7 +224,7 @@ module axi_logic_analyzer_reg (
           5'h12: up_rdata <= {31'h0,up_triggered};
           5'h13: up_rdata <= {31'h0,up_streaming};
           5'h14: up_rdata <= up_trigger_holdoff;
-          5'h15: up_rdata <= {26'h0,up_data_delay_control};
+          5'h16: up_rdata <= {26'h0,up_data_delay_control};
           default: up_rdata <= 0;
         endcase
       end else begin
